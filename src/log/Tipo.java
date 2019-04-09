@@ -50,7 +50,7 @@ public class Tipo implements Serializable{
 		case "WARN":
 			tipo.setTipo(WARN);
 			break;
-		case "SUCESS":
+		case "SUCCESS":
 			tipo.setTipo(SUCCESS);
 			break;
 		}
