@@ -16,7 +16,7 @@ public class Lista<T> implements Serializable{
 	
 	public void adicionar(T t) {
 		if (tamanho == objetos.length) {
-			this.almentarTamanho();
+			this.aumentarTamanho();
 		}
 		objetos[tamanho++] = t;
 	}
@@ -59,7 +59,7 @@ public class Lista<T> implements Serializable{
 		return lista;
 	}
 	
-	private void almentarTamanho() {
+	private void aumentarTamanho() {
 		Object objetos[] = new Object[this.objetos.length+2];
 		for(int i = 0; i < this.objetos.length;i++ ) {
 			objetos[i] = this.objetos[i];
